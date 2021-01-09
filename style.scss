@@ -1,0 +1,68 @@
+
+
+
+body
+{
+    background: white;
+    margin:0;
+    padding:0;
+    width: 100vw;
+    height: 100%;
+
+    font-size: 26px;
+    .content
+    {
+        border:black solid 2px;
+        margin:10%;
+        padding: 5%;
+        box-shadow:black 2px 2px 5px 1px;
+        min-height: 50vw;
+        .letters
+        {
+            width: fit-content;
+            display: flex;
+            padding: 1em;
+            & div
+            {
+                padding:.3em;
+                &:hover
+                {
+                    transform: scale(1.4);
+                    cursor: default;
+                }
+                &:nth-child(n)
+                {
+                    color:#e3170a;
+                }
+                &:nth-child(2n)
+                {
+                    color:#3b1f2b;
+                }
+                &:nth-child(3n)
+                {
+                    color:#2e86ab;
+                }
+                &:nth-child(4n)
+                {
+                    color:#140f2d;
+                }
+                &:nth-child(5n)
+                {
+                    color:#967d69;
+                }
+            }
+        }
+    }
+}
+
+.animateSizeUpAndDown
+{
+    animation-name: SizeUpAndDown;
+    animation-duration: 4s;
+}
+
+@keyframes SizeUpAndDown {
+    0% {font-size: 1em;}
+    50%{font-size: 3em; color:blueviolet;}
+    100%{font-size: 1em; color:black;}
+  }

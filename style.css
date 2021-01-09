@@ -1,0 +1,93 @@
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100%;
+  font-size: 26px;
+}
+
+body .content {
+  border: black solid 2px;
+  margin: 10%;
+  padding: 5%;
+  -webkit-box-shadow: black 2px 2px 5px 1px;
+          box-shadow: black 2px 2px 5px 1px;
+  min-height: 50vw;
+}
+
+body .content .letters {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+}
+
+body .content .letters div {
+  padding: .3em;
+}
+
+body .content .letters div:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  cursor: default;
+}
+
+body .content .letters div:nth-child(n) {
+  color: #e3170a;
+}
+
+body .content .letters div:nth-child(2n) {
+  color: #3b1f2b;
+}
+
+body .content .letters div:nth-child(3n) {
+  color: #2e86ab;
+}
+
+body .content .letters div:nth-child(4n) {
+  color: #140f2d;
+}
+
+body .content .letters div:nth-child(5n) {
+  color: #967d69;
+}
+
+.animateSizeUpAndDown {
+  -webkit-animation-name: SizeUpAndDown;
+          animation-name: SizeUpAndDown;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes SizeUpAndDown {
+  0% {
+    font-size: 1em;
+  }
+  50% {
+    font-size: 3em;
+    color: blueviolet;
+  }
+  100% {
+    font-size: 1em;
+    color: black;
+  }
+}
+
+@keyframes SizeUpAndDown {
+  0% {
+    font-size: 1em;
+  }
+  50% {
+    font-size: 3em;
+    color: blueviolet;
+  }
+  100% {
+    font-size: 1em;
+    color: black;
+  }
+}
+/*# sourceMappingURL=style.css.map */
