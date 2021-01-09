@@ -14,29 +14,36 @@ body
     {
         border:black solid 2px;
         margin:10%;
-        padding: 5%;
+        padding: 1%;
         box-shadow:black 2px 2px 5px 1px;
         min-height: 50vw;
         .letters
         {
             width: fit-content;
-            display: flex;
+            display:flex;
             padding: 1em;
             & div
             {
-                padding:.3em;
-                &:hover
-                {
-                    transform: scale(1.4);
-                    cursor: default;
-                }
+             
+                cursor: default;
+                padding:.05em;
                 &:nth-child(n)
                 {
                     color:#e3170a;
+                    transform:rotate(3deg);
+                    &:hover
+                    {
+                        transform: scale(1.4) rotate(-5deg);
+                    }
                 }
                 &:nth-child(2n)
                 {
                     color:#3b1f2b;
+                    transform:rotate(-3deg);
+                    &:hover
+                    {
+                        transform: scale(1.4) rotate(5deg);
+                    }
                 }
                 &:nth-child(3n)
                 {
@@ -58,11 +65,11 @@ body
 .animateSizeUpAndDown
 {
     animation-name: SizeUpAndDown;
-    animation-duration: 4s;
+    animation-duration: 1.5s;
 }
 
 @keyframes SizeUpAndDown {
-    0% {font-size: 1em;}
-    50%{font-size: 3em; color:blueviolet;}
-    100%{font-size: 1em; color:black;}
+    0% {font-size: .5em;}
+    50%{font-size: 2em; color:blueviolet;}
+    100%{font-size: .5em; color:black;}
   }

@@ -10,7 +10,7 @@ body {
 body .content {
   border: black solid 2px;
   margin: 10%;
-  padding: 5%;
+  padding: 1%;
   -webkit-box-shadow: black 2px 2px 5px 1px;
           box-shadow: black 2px 2px 5px 1px;
   min-height: 50vw;
@@ -27,21 +27,30 @@ body .content .letters {
 }
 
 body .content .letters div {
-  padding: .3em;
-}
-
-body .content .letters div:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
   cursor: default;
+  padding: .05em;
 }
 
 body .content .letters div:nth-child(n) {
   color: #e3170a;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+}
+
+body .content .letters div:nth-child(n):hover {
+  -webkit-transform: scale(1.4) rotate(-5deg);
+          transform: scale(1.4) rotate(-5deg);
 }
 
 body .content .letters div:nth-child(2n) {
   color: #3b1f2b;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+body .content .letters div:nth-child(2n):hover {
+  -webkit-transform: scale(1.4) rotate(5deg);
+          transform: scale(1.4) rotate(5deg);
 }
 
 body .content .letters div:nth-child(3n) {
@@ -59,34 +68,34 @@ body .content .letters div:nth-child(5n) {
 .animateSizeUpAndDown {
   -webkit-animation-name: SizeUpAndDown;
           animation-name: SizeUpAndDown;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 @-webkit-keyframes SizeUpAndDown {
   0% {
-    font-size: 1em;
+    font-size: .5em;
   }
   50% {
-    font-size: 3em;
+    font-size: 2em;
     color: blueviolet;
   }
   100% {
-    font-size: 1em;
+    font-size: .5em;
     color: black;
   }
 }
 
 @keyframes SizeUpAndDown {
   0% {
-    font-size: 1em;
+    font-size: .5em;
   }
   50% {
-    font-size: 3em;
+    font-size: 2em;
     color: blueviolet;
   }
   100% {
-    font-size: 1em;
+    font-size: .5em;
     color: black;
   }
 }

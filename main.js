@@ -7,7 +7,7 @@ function chngLetters()
 
     
     index=1;
-    timeMultiply=100;
+    timeMultiply=150;
     letters.forEach(letter => {
 
         setTimeout(function(){
@@ -19,6 +19,7 @@ function chngLetters()
         timeMultiply * index);
         index+=1;
     });
+
 }
 
 
