@@ -16,6 +16,13 @@ body .content {
   min-height: 50vw;
 }
 
+body .content .buttons {
+  position: absolute;
+  width: 10%;
+  left: 1%;
+  top: 15%;
+}
+
 body .content .letters {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -72,31 +79,134 @@ body .content .letters div:nth-child(5n) {
           animation-duration: 1.5s;
 }
 
+.rotateInf {
+  -webkit-animation: rotation 1s infinite linear;
+          animation: rotation 1s infinite linear;
+}
+
+.epilepsy {
+  -webkit-animation: epilepsy .1s infinite linear;
+          animation: epilepsy .1s infinite linear;
+  display: inline;
+}
+
 @-webkit-keyframes SizeUpAndDown {
   0% {
     font-size: .5em;
+    color: black;
   }
   50% {
     font-size: 2em;
-    color: blueviolet;
+  }
+  75% {
+    color: black;
   }
   100% {
     font-size: .5em;
-    color: black;
+    color: white;
   }
 }
 
 @keyframes SizeUpAndDown {
   0% {
     font-size: .5em;
+    color: black;
   }
   50% {
     font-size: 2em;
-    color: blueviolet;
+  }
+  75% {
+    color: black;
   }
   100% {
     font-size: .5em;
-    color: black;
+    color: white;
+  }
+}
+
+@-webkit-keyframes rotation {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes epilepsy {
+  0% {
+    background-color: black;
+  }
+  10% {
+    background-color: #00ff15;
+  }
+  20% {
+    background-color: cyan;
+  }
+  30% {
+    background-color: #e5ff00;
+  }
+  40% {
+    background-color: red;
+  }
+  50% {
+    background-color: #ff0095;
+  }
+  60% {
+    background-color: #0077ff;
+  }
+  70% {
+    background-color: #ffee00;
+  }
+  80% {
+    background-color: #a200ff;
+  }
+  90% {
+    background-color: #00ff2a;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@keyframes epilepsy {
+  0% {
+    background-color: black;
+  }
+  10% {
+    background-color: #00ff15;
+  }
+  20% {
+    background-color: cyan;
+  }
+  30% {
+    background-color: #e5ff00;
+  }
+  40% {
+    background-color: red;
+  }
+  50% {
+    background-color: #ff0095;
+  }
+  60% {
+    background-color: #0077ff;
+  }
+  70% {
+    background-color: #ffee00;
+  }
+  80% {
+    background-color: #a200ff;
+  }
+  90% {
+    background-color: #00ff2a;
+  }
+  100% {
+    background-color: black;
   }
 }
 /*# sourceMappingURL=style.css.map */

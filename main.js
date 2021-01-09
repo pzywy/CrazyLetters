@@ -25,3 +25,21 @@ function chngLetters()
 
 ParentID = document.getElementById("letterDiv");
 chngLetters();
+
+function toggleRotate()
+{
+    letter = document.querySelectorAll('.animateSizeUpAndDown');
+
+    letter.forEach(singleLetter =>
+        {
+            singleLetter.classList.toggle('rotateInf');
+        })
+}
+
+
+
+function epilepsy()
+{
+    document.body.classList.toggle('epilepsy');
+    
+}

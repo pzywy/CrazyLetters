@@ -17,6 +17,13 @@ body
         padding: 1%;
         box-shadow:black 2px 2px 5px 1px;
         min-height: 50vw;
+        .buttons
+        {
+            position: absolute;
+            width: 10%;
+            left: 1%;
+            top:15%;
+        }
         .letters
         {
             width: fit-content;
@@ -66,10 +73,49 @@ body
 {
     animation-name: SizeUpAndDown;
     animation-duration: 1.5s;
+
+    
 }
 
+.rotateInf
+{
+    animation: rotation 1s infinite linear;
+}
+
+
+.epilepsy
+{
+    animation: epilepsy .1s infinite linear;
+    display: inline;
+}
+
+
 @keyframes SizeUpAndDown {
-    0% {font-size: .5em;}
-    50%{font-size: 2em; color:blueviolet;}
-    100%{font-size: .5em; color:black;}
+    0% {font-size: .5em;color:black; }
+    50%{font-size: 2em; }
+    75%{color:black;}
+    100%{font-size: .5em; color:white;}
+  }
+
+  @keyframes rotation {
+    // 50% {
+    //   transform: rotate(360deg);
+    // }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes epilepsy{
+      0%{background-color: black;}
+      10%{background-color: rgb(0, 255, 21);}
+      20%{background-color: rgb(0, 255, 255);}
+      30%{background-color: rgb(229, 255, 0);}
+      40%{background-color: rgb(255, 0, 0);}
+      50%{background-color: rgb(255, 0, 149);}
+      60%{background-color: rgb(0, 119, 255);}
+      70%{background-color: rgb(255, 238, 0);}
+      80%{background-color: rgb(162, 0, 255);}
+      90%{background-color: rgb(0, 255, 42);}
+      100%{background-color: black;}
   }
